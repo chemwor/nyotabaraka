@@ -46,49 +46,49 @@ export type CalendarType = {
 export const advantages: AdvantagesType[] = [
   {
     title: 'Reconnect With Your Roots',
-    image: 'assets/img/landing/yoga-studio/features/spa-area.jpg',
+    image: 'assets/img/trip/roots.jpg',
     icon_class: 'ai-spa',
     description:
       'As a Kenyan-owned agency with ties to the Luo and Kalenjin communities, our trips are built on cultural authenticity, not tourist gimmicks.',
   },
   {
     title: 'Seamless & Stress-Free',
-    image: 'assets/img/landing/yoga-studio/features/changing-room.jpg',
+    image: 'assets/img/trip/stressfree.jpg',
     icon_class: 'ai-towel',
     description:
       'Flights, hotels, transportation, and guides are included. You focus on the adventure, we handle the details.',
   },
   {
     title: 'Fair & Local',
-    image: 'assets/img/landing/yoga-studio/features/free-lessons.jpg',
+    image: 'assets/img/trip/fair.jpg',
     icon_class: 'ai-flower',
     description:
       'Every trip supports Kenyan guides, artisans, and communities. Your experience gives back where it matters.',
   },
   {
     title: 'Authentic Cultural Immersion',
-    image: 'assets/img/landing/yoga-studio/features/lounge-cafe.jpg',
+    image: 'assets/img/trip/cultural.jpg',
     icon_class: 'ai-cafe',
     description:
       'Learn directly from Maasai artisans, Taita elders, and Swahili chefs. Every interaction is genuine, not staged.',
   },
   {
     title: 'Small Group Comfort',
-    image: 'assets/img/landing/yoga-studio/features/bright-halls.jpg',
+    image: 'assets/img/trip/smallgroup.jpg',
     icon_class: 'ai-sofa',
     description:
       'Whether solo, as a couple, or with friends, our group sizes stay intimate so every traveler feels connected and cared for.',
   },
   {
     title: 'Premium Stays, Local Touch',
-    image: 'assets/img/landing/yoga-studio/features/free-rugs.jpg',
+    image: 'assets/img/trip/premium.jpg',
     icon_class: 'ai-rug',
     description:
       'From safari lodges to coastal resorts, accommodations are chosen for both comfort and cultural character.',
   },
   {
     title: 'Responsible Adventure',
-    image: 'assets/img/landing/yoga-studio/features/flower.svg',
+    image: 'assets/img/trip/responsible.jpg',
     description:
       'We prioritize sustainability, ensuring your trip protects wildlife and uplifts local communities.',
   },

@@ -16,12 +16,18 @@ export class HorizontalAppMenu {
   menuItems = getMenuItems()
   buyLink = buyLink
 
-  megaMenuItems = this.menuItems.filter((item) => item.isMega)
-  normalMenuItems = this.menuItems.filter((item) => !item.isMega)
-  splitMegaMenuItems: MenuItemType[][] = splitArray(
-    this.megaMenuItems[0].children ?? [],
-    10
-  )
+  get megaMenuItems(): MenuItemType[] {
+    return (this.menuItems ?? []).filter(i => i.isMega);
+  }
+
+  get normalMenuItems(): MenuItemType[] {
+    return (this.menuItems ?? []).filter(i => !i.isMega);
+  }
+
+  get splitMegaMenuItems(): MenuItemType[][] {
+    const kids = this.megaMenuItems[0]?.children ?? [];
+    return splitArray(kids, 10);
+  }
 
   trimmedURL = location?.pathname?.replaceAll(
     basePath !== '' ? basePath + '/' : '',
