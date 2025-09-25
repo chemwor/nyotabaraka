@@ -10,7 +10,7 @@ import { PricingComponent } from './components/pricing/pricing.component'
 import { FeturesComponent } from '../yoga-studio/components/fetures/fetures.component'
 import { CaseStudiesComponent } from '../marketing-agency/components/case-studies/case-studies.component'
 import { FaqComponent } from '../mobile-showcase/components/faq/faq.component'
-import { FooterComponent } from '../saas-v2/components/footer/footer.component'
+import { FooterComponent } from '../../about/agency/component/footer/footer.component'
 
 @Component({
   selector: 'landings-saas-v4',
@@ -27,6 +27,7 @@ import { FooterComponent } from '../saas-v2/components/footer/footer.component'
     FeturesComponent,
     CaseStudiesComponent,
     FaqComponent,
+    FooterComponent,
     FooterComponent,
     FooterComponent,
   ],

@@ -5,7 +5,7 @@ import {
   emailMarketing,
   marketShares,
   marketingBranding,
-  strategDevelopment,
+  strategDevelopment, webInternet,
 } from '@components/icons'
 
 export type StepType = {
@@ -185,13 +185,13 @@ export const professionalMissionData: ProfessionalMissionType[] = [
     title: 'Connection Through Travel',
     content:
       'We design journeys that go beyond sightseeing. Every trip is a chance to connect with Kenya’s people, traditions, and landscapes in a meaningful way.',
-    icon: businessCopywriting,
+    icon: webInternet,
   },
   {
     title: 'Supporting Communities',
     content:
       'Our mission includes giving back. By partnering with local guides, artisans, and cultural groups, we ensure your travel directly benefits the communities you visit.',
-    icon: marketShares,
+    icon: communication,
   },
   {
     title: 'Honoring Heritage',

@@ -47,14 +47,14 @@ export const advantages: AdvantagesType[] = [
   {
     title: 'Reconnect With Your Roots',
     image: 'assets/img/trip/roots.jpg',
-    icon_class: 'ai-spa',
+    icon_class: 'ai-fruit',
     description:
       'As a Kenyan-owned agency with ties to the Luo and Kalenjin communities, our trips are built on cultural authenticity, not tourist gimmicks.',
   },
   {
     title: 'Seamless & Stress-Free',
     image: 'assets/img/trip/stressfree.jpg',
-    icon_class: 'ai-towel',
+    icon_class: 'ai-cafe',
     description:
       'Flights, hotels, transportation, and guides are included. You focus on the adventure, we handle the details.',
   },
@@ -68,7 +68,7 @@ export const advantages: AdvantagesType[] = [
   {
     title: 'Authentic Cultural Immersion',
     image: 'assets/img/trip/cultural.jpg',
-    icon_class: 'ai-cafe',
+    icon_class: 'ai-target',
     description:
       'Learn directly from Maasai artisans, Taita elders, and Swahili chefs. Every interaction is genuine, not staged.',
   },
@@ -82,13 +82,14 @@ export const advantages: AdvantagesType[] = [
   {
     title: 'Premium Stays, Local Touch',
     image: 'assets/img/trip/premium.jpg',
-    icon_class: 'ai-rug',
+    icon_class: 'ai-star-filled',
     description:
       'From safari lodges to coastal resorts, accommodations are chosen for both comfort and cultural character.',
   },
   {
     title: 'Responsible Adventure',
     image: 'assets/img/trip/responsible.jpg',
+    icon_class: 'ai-spa',
     description:
       'We prioritize sustainability, ensuring your trip protects wildlife and uplifts local communities.',
   },
