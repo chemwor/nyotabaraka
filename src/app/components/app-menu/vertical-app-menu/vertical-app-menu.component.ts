@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core'
+import { Router, NavigationEnd } from '@angular/router';
 import { findAllParent, findMenuItem, getMenuItemFromURL } from '@helpers/menu'
 import type { MenuItemType } from 'src/app/common/menu-items'
 import { VerticalMenuItemWithChildrenComponent } from './components/vertical-menu-item-with-children.component'
@@ -20,6 +21,17 @@ export class VerticalAppMenuComponent {
     '/'
   )
   matchingMenuItem: MenuItemType | undefined
+
+  isMenuOpen = true; // Track menu open/close state
+
+  constructor(private router: Router) {
+    // Listen for navigation events and close menu
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.isMenuOpen = false;
+      }
+    });
+  }
 
   ngOnInit(): void {
     if (this.menuItems)

@@ -1,4 +1,5 @@
 import { Component, inject, type OnInit } from '@angular/core'
+import { Router, NavigationEnd } from '@angular/router';
 import { VerticalAppMenuComponent } from './vertical-app-menu/vertical-app-menu.component'
 import { getMenuItems } from '@helpers/menu'
 import { NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap'
@@ -42,6 +43,7 @@ import { LogoBoxComponent } from '@components/logo-box/logo-box.component'
 })
 export class VerticalMenuButtonComponent implements OnInit {
   offcanvasService = inject(NgbOffcanvas)
+  router = inject(Router)
 
   isOffcanvasOpen: boolean = false
 
@@ -49,6 +51,12 @@ export class VerticalMenuButtonComponent implements OnInit {
     this.offcanvasService.activeInstance.subscribe((e) => {
       this.isOffcanvasOpen = Boolean(e)
     })
+    // Close offcanvas on navigation
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.offcanvasService.dismiss();
+      }
+    });
   }
 
   menuItems = getMenuItems()

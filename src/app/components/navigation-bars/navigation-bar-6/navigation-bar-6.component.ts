@@ -50,7 +50,7 @@ export class NavigationBar6Component implements OnInit {
     this.checkScroll()
   }
 
-  buyLink = buyLink
+  buyLink = '/landings/coworking-space'
 
   checkScroll() {
     const scrollTop =

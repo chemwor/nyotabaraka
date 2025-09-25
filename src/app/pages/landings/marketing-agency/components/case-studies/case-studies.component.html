@@ -51,25 +51,13 @@
     <div class="col-md-6 col-xl-5 offset-xl-1">
       <div class="ps-md-4 ps-xl-0">
         <div class="d-flex align-items-center ms-n3 pb-3 mb-sm-2 mb-xl-4">
-          <button
-            class="btn btn-icon btn-link"
-            type="button"
-            id="prev-case-study"
-            aria-label="Prev"
-          >
+          <button class="btn btn-icon btn-link" type="button" (click)="onPrev()" aria-label="Previous">
             <i class="ai-arrow-left"></i>
           </button>
-          <div
-            class="text-center text-nowrap mx-3"
-            id="slides-count"
-            style="width: 33px"
-          ></div>
-          <button
-            class="btn btn-icon btn-link"
-            type="button"
-            id="next-case-study"
-            aria-label="Next"
-          >
+
+          <div class="text-center text-nowrap mx-3" #fractionEl style="width: 33px"></div>
+
+          <button class="btn btn-icon btn-link" type="button" (click)="onNext()" aria-label="Next">
             <i class="ai-arrow-right"></i>
           </button>
         </div>
@@ -91,24 +79,6 @@
                   class="d-flex d-md-none d-lg-flex justify-content-between w-100 pb-4 pb-xl-5 mb-2 mb-sm-3 mb-xl-2"
                   style="max-width: 440px"
                 >
-<!--                  <div class="pe-4">-->
-<!--                    <div class="h2 mb-1">{{ item.statistics.leads }}</div>-->
-<!--                    <div class="fs-sm">-->
-<!--                      leads for {{ selectedCurrency }} 2.1-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                  <div class="pe-4">-->
-<!--                    <div class="h2 mb-1">-->
-<!--                      {{ item.statistics.revenueIncrease }}-->
-<!--                    </div>-->
-<!--                    <div class="fs-sm">revenue increase</div>-->
-<!--                  </div>-->
-<!--                  <div>-->
-<!--                    <div class="h2 mb-1">-->
-<!--                      {{ item.statistics.salesChannels }}-->
-<!--                    </div>-->
-<!--                    <div class="fs-sm">sales channels</div>-->
-<!--                  </div>-->
                 </div>
                 <div class="d-sm-flex">
                   <a
